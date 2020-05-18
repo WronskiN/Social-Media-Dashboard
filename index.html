@@ -2,87 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | [Challenge Name Here]</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <nav class="nav">
+      <div class="nav__align aligner">
+        <div class="header">
+          <h1 class="header__title">Social Media Dashboard</h1>
+          <p class="header__text">Total Followers: 23,004</p>
+        </div>
+        <div class="mode">
+          <p class="mode__name">Dark Mode</p>
+          <div class="mode__switch"><button class="mode__btn"></button></div>
+        </div>
+      </div>
+    </nav>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <div class="dashboard">
+      <div class="dashboard__align aligner">
+        <div class="dashboard__followers">
 
-  Dark Mode
-
+          <div class="follower">
+            <div class="follower__name"><img class="img" src="/images/icon-facebook.svg" alt="Facebook icon">@nathanf</div>
+            <div class="follower__numbers">
+              <span class="follower__num">1987</span>
+              <p class="follower__text">followers</p>
+            </div>
+            <div class="follower__subscr"><img src="/images/icon-up.svg" alt="">12 Today</div>
+          </div>
   
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+          <div class="follower">
+            <div class="follower__name"><img class="img" src="/images/icon-twitter.svg" alt="Twitter icon">@nathanf</div>
+            <div class="follower__numbers">
+              <span class="follower__num">1044</span>
+              <p class="follower__text">followers</p>
+            </div>
+            <div class="follower__subscr"><img src="/images/icon-up.svg" alt="">99 Today</div>
+          </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="follower">
+            <div class="follower__name"><img class="img" src="/images/icon-instagram.svg" alt="Instagram icon">@realnathanf</div>
+            <div class="follower__numbers">
+              <span class="follower__num">11k</span>
+              <p class="follower__text">followers</p>
+            </div>
+            <div class="follower__subscr"><img src="/images/icon-up.svg" alt="">1099 Today</div>
+          </div>
+  
+          <div class="follower">
+            <div class="follower__name"><img class="img" src="/images/icon-youtube.svg" alt="Youtube icon">Nathan F.</div>
+            <div class="follower__numbers">
+              <span class="follower__num">8239</span>
+              <p class="follower__text">subscribes</p>
+            </div>
+            <div class="follower__subscr follower__subscr--colorRed"><img src="/images/icon-down.svg" alt="">144 Today</div>
+          </div>
+        </div>
+        <div class="dashboard__overview">
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Page View</p>
+              <img src="/images/icon-facebook.svg" alt="icon-facebook">
+            </div>
+            <div class="card__bottom">
+              <span class="num">87</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-up.svg" alt="">
+                <span class="precentage__num">3%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Likes</p>
+              <img src="/images/icon-facebook.svg" alt="icon-facebook">
+            </div>
+            <div class="card__bottom">
+              <span class="num">52</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-down.svg" alt="">
+                <span class="precentage__num precentage__num--red">2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Likes</p>
+              <img src="/images/icon-instagram.svg" alt="icon-instagram">
+            </div>
+            <div class="card__bottom">
+              <span class="num">5462</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-up.svg" alt="">
+                <span class="precentage__num">2257%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Profile Views</p>
+              <img src="/images/icon-instagram.svg" alt="icon-instagram">
+            </div>
+            <div class="card__bottom">
+              <span class="num">52</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-up.svg" alt="">
+                <span class="precentage__num">1375%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Retweets</p>
+              <img src="/images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+            <div class="card__bottom">
+              <span class="num">117</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-up.svg" alt="">
+                <span class="precentage__num">303%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Likes</p>
+              <img src="/images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+            <div class="card__bottom">
+              <span class="num">507</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-up.svg" alt="">
+                <span class="precentage__num">553%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Likes</p>
+              <img src="/images/icon-youtube.svg" alt="icon-youtube">
+            </div>
+            <div class="card__bottom">
+              <span class="num">107</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-down.svg" alt="">
+                <span class="precentage__num precentage__num--red">19%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <p class="text">Total Views</p>
+              <img src="/images/icon-youtube.svg" alt="icon-youtube">
+            </div>
+            <div class="card__bottom">
+              <span class="num">107</span>
+              <div class="precentage">
+                <img class="precentage__img" src="/images/icon-down.svg" alt="">
+                <span class="precentage__num precentage__num--red">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
