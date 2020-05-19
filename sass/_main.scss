@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
+
   .aligner {
     max-width: 1200px;
     margin: 0 auto;
@@ -14,6 +15,7 @@
     background-color: $veryDarkBlueNav;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
     &--light {
       background-color: $veryPaleBlue;
     }
@@ -25,6 +27,7 @@
       justify-content: center;
       align-items: center;
       padding: 0 20px;
+
       @media(min-width: 1024px) {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -37,39 +40,48 @@
       padding: 20px 0;
       border-bottom: 1px solid $desaturatedBlue;
       letter-spacing: 1px;
+
       @media(min-width: 1024px) {
         width: 40%;
         border: none;
       }
+
       &__title {
         font-size: 2rem;
+
         &--light {
           color: black;
         }
       }
+
       &__text {
         font-size: 1.3rem;
         color: $desaturatedBlue;
+
         &--light {
           color: $darkGrayishBlue;
         }
-        
+
       }
     }
+
     .mode {
       width: 100%;
       padding: 20px 0;
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
+
       @media(min-width: 1024px) {
         width: 10%;
         align-items: center;
       }
+
       &__name {
         font-size: 1.3rem;
         color: $desaturatedBlue;
       }
+
       &__switch {
         width: 40px;
         height: 20px;
@@ -78,6 +90,7 @@
         border-radius: 10px;
         position: relative;
       }
+
       &__btn {
         position: absolute;
         width: 17px;
@@ -90,39 +103,45 @@
         display: block;
         background-color: $veryDarkBlue;
         transition: all .3s ease;
+
         &--light {
           transform: translateY(-50%) translateX(100%);
           background-color: $veryPaleBlue;
         }
+
         &:hover {
           cursor: pointer;
         }
-      
       }
     }
   }
+
   // end of nav
   .dashboard {
     width: 100%;
     min-height: 100vh;
     position: absolute;
     top: 30vh;
+
     @media(min-width: 1024px) {
       top: 20vh;
     }
+
     &__align {
       width: 100%;
       padding: 0 20px;
     }
+
     &__followers {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+
       @media(min-width: 1024px) {
         flex-wrap: nowrap;
       }
-      
+
       .follower {
         width: 100%;
         height: 200px;
@@ -133,32 +152,57 @@
         background-color: $darkDesaturatedBlue;
         border-radius: 5px;
         margin-bottom: 20px;
+
         @media(min-width: 1024px) {
-          width: 22%; 
+          width: 22%;
         }
+
         &--light {
           background-color: $lightGrayishBlue;
+
           &:hover {
             background-color: hsl(200, 6%, 82%);
           }
         }
+
         &:hover {
           cursor: pointer;
           background-color: hsl(229, 27%, 30%);
         }
+
         &:nth-child(1) {
           border-top: 5px solid $facebook;
         }
+
         &:nth-child(2) {
           border-top: 5px solid $twitter;
         }
+
         &:nth-child(3) {
-          border-top: 5px solid pink;
-          // background: $instagram;
+          position: relative;
+
+          // border-top: 5px solid pink;
+          // // background: $instagram;
+          &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            background: rgb(253, 196, 104);
+            background: linear-gradient(90deg, rgba(253, 196, 104, 1) 1%, rgba(223, 73, 150, 1) 93%);
+
+          }
         }
+
         &:nth-child(4) {
           border-top: 5px solid $youTube;
         }
+
         &__name {
           width: 100%;
           display: flex;
@@ -168,29 +212,36 @@
           font-size: 1.3rem;
           letter-spacing: 1px;
           color: $desaturatedBlue;
+
           .img {
             padding-right: 10px;
           }
         }
+
         &__numbers {
           width: 100%;
           text-align: center;
         }
+
         &__num {
           font-size: 4rem;
+
           &--light {
             color: black;
           }
         }
+
         &__text {
           text-transform: uppercase;
           font-size: 1.3rem;
           color: $desaturatedBlue;
           letter-spacing: 2px;
+
           &--light {
             color: $darkGrayishBlue;
           }
         }
+
         &__subscr {
           width: 100%;
           display: flex;
@@ -201,16 +252,18 @@
           color: $limeGreen;
           letter-spacing: 1px;
           font-weight: 700;
+
           &--colorRed {
             color: $brightRed;
           }
+
           img {
             padding-right: 3px;
           }
         }
       }
     }
-    
+
     &__overview {
       width: 100%;
       display: flex;
@@ -224,15 +277,19 @@
         border-radius: 5px;
         padding: 20px 25px;
         margin-bottom: 20px;
-          @media(min-width: 1024px) {
-            width: 22%; 
-          }
+
+        @media(min-width: 1024px) {
+          width: 22%;
+        }
+
         &:hover {
           cursor: pointer;
           background-color: hsl(229, 27%, 30%);
         }
+
         &--light {
           background-color: $lightGrayishBlue;
+
           &:hover {
             background-color: hsl(200, 6%, 82%);
           }
@@ -243,36 +300,45 @@
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
+
           .text {
             color: $desaturatedBlue;
             font-size: 1.3rem;
             font-weight: 700;
+
             &--light {
               color: $darkGrayishBlue;
             }
           }
         }
+
         &__bottom {
           width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
+
           .num {
             font-size: 2rem;
+
             &--light {
               color: black;
             }
           }
+
           .precentage {
             display: flex;
             align-items: center;
+
             &__num {
               color: $limeGreen;
               font-size: 1.1rem;
+
               &--red {
                 color: $brightRed;
               }
             }
+
             &__img {
               padding-right: 3px;
             }

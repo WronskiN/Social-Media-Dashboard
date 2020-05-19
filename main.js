@@ -12,4 +12,11 @@ btn.addEventListener('click', function() {
   document.querySelectorAll('.follower__text').forEach(el => el.classList.toggle('.follower__text--light'));
   document.querySelectorAll('.text').forEach(el => el.classList.toggle('text--light'));
   document.querySelectorAll('.num').forEach(el => el.classList.toggle('num--light'));
+
+  const modeName = document.querySelector('.mode__name');
+  if(document.querySelector('body').classList.contains('light')) {
+    modeName.textContent = "Dark Mode";
+  } else {
+    modeName.textContent = "Light Mode";
+  }
 });
